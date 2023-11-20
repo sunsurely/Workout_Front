@@ -3,10 +3,8 @@ import styled from '@emotion/styled';
 const Container = styled.img`
   width: 150px;
   height: 150px;
-  margin-left: 30px;
   border: 0;
   cursor: pointer;
-  background-color: #ffb9dc;
 `;
 
 interface Props {
@@ -14,7 +12,7 @@ interface Props {
 }
 
 const Img = ({ imgUrl }: Props) => {
-  return <Container src={imgUrl ? imgUrl : ''} alt="오운완 사진" />;
+  return <Container src={imgUrl ? imgUrl : '/images/나.jpg'} alt="no image" />;
 };
 
 export default Img;

@@ -23,8 +23,8 @@ interface Props {
 const ImgCard = ({ imgUrl, content, title }: Props) => {
   return (
     <Container>
-      <CardBody content={content} title={title} />
       <Img imgUrl={imgUrl} />
+      <CardBody content={content} title={title} />
     </Container>
   );
 };
