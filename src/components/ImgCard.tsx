@@ -3,28 +3,28 @@ import Img from './atoms/Image';
 import CardBody from './atoms/CardBody';
 
 const Container = styled.div`
-  width: 800px;
+  width: 300px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   cursor: pointer;
   margin-top: 30px;
-  padding: 0;
+  margin-left: 40px;
+  box-shadow: 0 2px 5px black;
   &:hover {
     opacity: 0.6;
   }
 `;
 
 interface Props {
-  imgUrl: string;
-  content: string;
   title: string;
+  imgUrl?: string | null;
 }
 
-const ImgCard = ({ imgUrl, content, title }: Props) => {
+const ImgCard = ({ title, imgUrl }: Props) => {
   return (
     <Container>
       <Img imgUrl={imgUrl} />
-      <CardBody content={content} title={title} />
+      <CardBody title={title} />
     </Container>
   );
 };

@@ -1,23 +1,24 @@
 import styled from '@emotion/styled';
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
 `;
 
-const Title = styled.div`
-  font-size: 1.2rem;
+const Title = styled(Link)`
+  text-decoration: none;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #7c7c7c;
+  color: #b14444;
   padding: 10px;
 `;
 
 const Header = () => {
   return (
     <Container>
-      <Title>운동 블로그</Title>
+      <Title to={'/'}>Worecord</Title>
       <Nav />
     </Container>
   );

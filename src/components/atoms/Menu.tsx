@@ -6,7 +6,7 @@ const Container = styled(Link)`
   margin-left: 50px;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 
   &:hover {
     opacity: 0.6;

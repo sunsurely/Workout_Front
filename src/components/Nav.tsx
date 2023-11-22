@@ -3,8 +3,11 @@ import Menu from './atoms/Menu';
 import { Link } from 'react-router-dom';
 
 const Container = styled.div`
+  width: 100%;
   display: flex;
   padding: 10px 0;
+  background-color: #569bf5;
+  margin: 0;
 `;
 
 const Regist = styled(Link)`
@@ -13,7 +16,7 @@ const Regist = styled(Link)`
   right: 50px;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 
   &:hover {
     opacity: 0.7;
