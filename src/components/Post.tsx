@@ -19,12 +19,12 @@ export type PostType = {
   title: string;
 };
 const posts = [
-  { id: 1, title: 'kkk', content: '좋으다' },
-  { id: 2, title: 'kkk', content: '완전 좋으다' },
-  { id: 3, title: 'kkk', content: '좋으다' },
-  { id: 4, title: 'kkk', content: '공부하고 싶으다' },
-  { id: 5, title: 'kkk', content: '광고나 하나 띄워 놔야지 그냥' },
-  { id: 6, title: 'kkk', content: '흠 이정도면 괜찮은 거 아닌가?' },
+  { id: 1, title: '첫 번째 운동 일지', content: '좋으다' },
+  { id: 2, title: '두 전째 운동 일지', content: '완전 좋으다' },
+  { id: 3, title: '오늘도 어김없이', content: '좋으다' },
+  { id: 4, title: '완전 좋으다', content: '공부하고 싶으다' },
+  { id: 5, title: '상쾌하구만', content: '광고나 하나 띄워 놔야지 그냥' },
+  { id: 6, title: '지겨워 죽겠다', content: '흠 이정도면 괜찮은 거 아닌가?' },
 ];
 
 const Post = () => {
